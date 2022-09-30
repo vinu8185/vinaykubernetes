@@ -1,0 +1,14 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: postgres-service
+  labels:
+    author: vinay
+spec:
+  ports:
+    - targetPort: 5432
+      port: 5432
+  selector:
+    name: postgres-app
+...
